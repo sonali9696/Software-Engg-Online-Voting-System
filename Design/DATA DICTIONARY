@@ -1,0 +1,51 @@
+DATA DICTIONARY
+
+response =[v_response, a_response, c_response]
+v_response = {string} = [login_response , regResponse, voteResponse ]
+a_response = {string} = [login_response , regResponse, docVerifyResponse ]
+c_response = {string} = [login_response, regResponse, uploadDocResponse, viewCandRes ]
+v_request = [v_login, v_reg, resultReq, viewElReq, voteReq, viewCandReq]
+a_request = [a_login, docVerifyReq, createElReq, resultReq, viewElReq, changeElReq]
+c_request = [c_login, c_reg, resultReq, viewElReq, uploadDocReq]
+resultReq = election_id
+viewElReq = [election_id]*
+voteReq = vote_id
+viewCandReq = candidate_id
+docVerifyReq = document_id
+createElReq = election_id 
+resultReq = election_id
+v_login = v_user_id + v_password
+v_user_id: {integer}
+v_password: {password}
+c_login = c_user_id + c_password
+c_user_id: {integer}
+c_password: {password}
+a_login = a_user_id + a_password
+a_user_id: {integer}
+a_password: {password}
+c_reg = name + email_ID + Age + VoterID + Constituency + Party_Name
+v_reg = name + email_ID + Age + VoterID + Constituency
+name = first name + middle name + last name
+first name = {string}
+middle name = {string}
+last name = {string}
+email_ID = {string}
+Age = {integer}
+VoterID = {integer}
+Constituency= {string}
+Party_Name = {string}
+uploadDocReq = adhar_ID + dob + work_exp_doc + criminal_record_doc
+adhar_ID = {integer}
+dob = {date}
+work_exp_doc = dateOfWork + work
+dateOfWork = {date}*
+work = {string}*
+criminal_record_doc= dateOfCrime + crime
+dateOfCrime = {date}*
+crime = {string}*
+election_id = {integer} 
+candidate_id = {integer}
+document_id = {integer}
+vote_id = {integer}
+
+

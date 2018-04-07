@@ -1,0 +1,14 @@
+FIRST Create a database "poll"
+import poll.sql file to phpmyadmin (Check inside the root folder online_voting)
+
+
+ADMIN LOGIN DETAILS
+URL: localhost/online_voting/admin
+USER NAME: admin@gmail.com
+PASSWORD: admin
+
+
+USER
+USER NAME: <USE EMAIL ID CHECK DB>
+PASSWORD:123       <For all users md5 encrypted>
+
